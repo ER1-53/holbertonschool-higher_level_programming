@@ -143,6 +143,9 @@ guillaume@ubuntu:~/py/0x00$
 - Directory: python-hello_world
 - File: 4-print_float.py
 
+### info
+- print("Float: %.2f" % number) cette ancienne methode fonctionne mais elle a changé depuis python 3.6.
+
 
 | **3. Print string** | mandatory |
 |...........|...........|
