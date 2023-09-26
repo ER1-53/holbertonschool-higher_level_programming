@@ -1,5 +1,4 @@
 def uppercase(str):
-    upp = ""
     for i in range(len(str)):
         if ord('a') <= ord(str[i]) <= ord('z'):
             maj = ord(str[i]) - 32
