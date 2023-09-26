@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 for ascii in range(97, 123):
-    if chr(ascii) != 'q' or chr(ascii) != 'e':
-        print(chr(ascii), end='')
+    if ascii == 101 or ascii == 113:
+        continue
+    else:
+        print("{}".format(chr(ascii)), end='')
