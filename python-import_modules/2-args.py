@@ -10,9 +10,8 @@ if __name__ == "__main__":
     print("{} {}".format(argc - 1, argu), end="")
     if len(argv) != 1:
         print(":")
-        for i in range(1,argc):
+        for i in range(1, argc):
             print("{}: {}".format(i, argv[i]), end='')
             print()
     else:
         print(".")
-        
