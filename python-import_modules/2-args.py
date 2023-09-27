@@ -2,11 +2,16 @@
 import sys
 argv = sys.argv
 argc = len(argv)
+if (argc - 1) == 1:
+    argu = "argument"
+else:
+    argu = "arguments"
+print("{} {}".format(argc - 1, argu), end="")
 if len(argv) != 1:
-    print("{} arguments:".format(argc))
+    print(":")
     for i in range(1,argc):
         print("{}: {}".format(i, argv[i]), end='')
         print()
 else:
-    print("{} argument.".format(argc))
+    print(".")
         
