@@ -11,7 +11,7 @@ if __name__ == "__main__":
         print("{}".format(add(int(argv[1]), int(argv[3]))))
     elif argv[2] == '-':
         print("{}".format(sub(int(argv[1]), int(argv[3]))))
-    elif argv[2] == '*':
+    elif argv[2] == "*":
         print("{}".format(mul(int(argv[1]), int(argv[3]))))
     elif argv[2] == '/':
         print("{}".format(div(int(argv[1]), int(argv[3]))))
