@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import calculator_1 as calc
-import sys
+from sys import argv
 if __name__ == "__main__":
     argv = sys.argv
     argc = len(argv)
