@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
-    new_dico = {}
+    new_dic = {}
     for key, value in a_dictionary.items():
         new_dico[key] = value * 2
-    return new_dico
+    return new_dic
