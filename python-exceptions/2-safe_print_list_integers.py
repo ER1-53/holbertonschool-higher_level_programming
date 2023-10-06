@@ -11,4 +11,5 @@ def safe_print_list_integers(my_list=[], x=0):
     except IndexError:
          print("Traceback (most recent call last):")
     finally:
+        print()
         return count
