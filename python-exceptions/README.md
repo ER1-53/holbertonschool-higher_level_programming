@@ -1,3 +1,5 @@
+[![Logo](https://uploads-ssl.webflow.com/64107f65f30b69371e3d6bfa/6480d9b63a806a1b35fec007_Holberton.png)](https://www.holbertonschool.fr/?utm_source=googleads&utm_medium=cta&utm_campaign=marque&gad=1&gclid=Cj0KCQjwrMKmBhCJARIsAHuEAPR2L8kfEV4McEyqp7jnK5xo70Y-eLbuF5pkCITtfnHnuS7EXWoZzRMaAhQCEALw_wcB)
+
 
 Project badge
 Python - Exceptions
@@ -66,13 +68,13 @@ nb_print: 2
 nb_print: 5
 12345
 nb_print: 5
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 0-safe_print_list.py
-  
+
 0/11 pts
 1. Safe printing of an integers list
 mandatory
@@ -110,13 +112,13 @@ guillaume@ubuntu:~/$ ./1-main.py
 89
 -89
 School is not an integer
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 1-safe_print_integer.py
-  
+
 0/14 pts
 2. Print and count integers
 mandatory
@@ -160,13 +162,13 @@ nb_print: 5
   File "//2-safe_print_list_integers.py", line 7, in safe_print_list_integers
     print("{:d}".format(my_list[i]), end="")
 IndexError: list index out of range
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 2-safe_print_list_integers.py
-  
+
 0/13 pts
 3. Integers division with debug
 mandatory
@@ -198,13 +200,13 @@ Inside result: 6.0
 12 / 2 = 6.0
 Inside result: None
 12 / 0 = None
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 3-safe_print_division.py
-  
+
 0/10 pts
 4. Divide a list
 mandatory
@@ -246,13 +248,13 @@ division by 0
 wrong type
 out of range
 [5.0, 0, 0, 2.0, 0]
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 4-list_division.py
-  
+
 0/16 pts
 5. Raise exception
 mandatory
@@ -271,13 +273,13 @@ except TypeError as te:
 
 guillaume@ubuntu:~/$ ./5-main.py
 Exception raised
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-exceptions
 File: 5-raise_exception.py
-  
+
 0/11 pts
 6. Raise a message
 mandatory
@@ -296,7 +298,7 @@ except NameError as ne:
 
 guillaume@ubuntu:~/$ ./6-main.py
 C is fun
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Repo:
 
 GitHub repository: holbertonschool-higher_level_programming

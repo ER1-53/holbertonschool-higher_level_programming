@@ -1,3 +1,5 @@
+[![Logo](https://uploads-ssl.webflow.com/64107f65f30b69371e3d6bfa/6480d9b63a806a1b35fec007_Holberton.png)](https://www.holbertonschool.fr/?utm_source=googleads&utm_medium=cta&utm_campaign=marque&gad=1&gclid=Cj0KCQjwrMKmBhCJARIsAHuEAPR2L8kfEV4McEyqp7jnK5xo70Y-eLbuF5pkCITtfnHnuS7EXWoZzRMaAhQCEALw_wcB)
+
 
 # Python - import & modules
 
@@ -76,7 +78,7 @@ guillaume@ubuntu:~/$ ./0-add.py
 1 + 2 = 3
 guillaume@ubuntu:~/$ cat 0-import_add.py
 __import__("0-add")
-guillaume@ubuntu:~/$ python3 0-import_add.py 
+guillaume@ubuntu:~/$ python3 0-import_add.py
 guillaume@ubuntu:~/$
 ```
 
@@ -85,7 +87,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 0-add.py
-  
+
 
 | **1. My first toolbox!** |
 mandatory
@@ -169,7 +171,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 1-calculation.py
-  
+
 
 2. How to make a script dynamic!
 mandatory
@@ -186,7 +188,7 @@ The number of elements of argv can be retrieved by using: len(argv)
 You do not have to fully understand lists yet, but imagine that argv can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
 
 ```
-guillaume@ubuntu:~/$ ./2-args.py 
+guillaume@ubuntu:~/$ ./2-args.py
 0 arguments.
 guillaume@ubuntu:~/$ ./2-args.py Hello
 1 argument:
@@ -207,7 +209,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 2-args.py
-  
+
 
 3. Infinite addition
 mandatory
@@ -222,9 +224,9 @@ guillaume@ubuntu:~/$ ./3-infinite_add.py
 0
 guillaume@ubuntu:~/$ ./3-infinite_add.py 79 10
 89
-guillaume@ubuntu:~/$ ./3-infinite_add.py 79 10 -40 -300 89 
+guillaume@ubuntu:~/$ ./3-infinite_add.py 79 10 -40 -300 89
 -162
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
 
 guillaume@ubuntu:~/$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -237,7 +239,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 3-infinite_add.py
-  
+
 
 4. Who are you?
 mandatory
@@ -262,7 +264,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-import_modules
 File: 4-hidden_discovery.py
-  
+
 
 5. Everything can be imported
 mandatory

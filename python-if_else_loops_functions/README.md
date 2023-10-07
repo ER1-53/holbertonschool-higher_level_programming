@@ -1,3 +1,6 @@
+[![Logo](https://uploads-ssl.webflow.com/64107f65f30b69371e3d6bfa/6480d9b63a806a1b35fec007_Holberton.png)](https://www.holbertonschool.fr/?utm_source=googleads&utm_medium=cta&utm_campaign=marque&gad=1&gclid=Cj0KCQjwrMKmBhCJARIsAHuEAPR2L8kfEV4McEyqp7jnK5xo70Y-eLbuF5pkCITtfnHnuS7EXWoZzRMaAhQCEALw_wcB)
+
+
 # Python - if/else, loops, functions
  - Novice
  - By: Guillaume
@@ -67,23 +70,23 @@ This program will assign a random signed number to the variable number each time
     - followed by a new line
 
 ```
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 -4 is negative
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 0 is zero
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 -3 is negative
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 -10 is negative
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 10 is positive
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 -5 is negative
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 6 is positive
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 7 is positive
-guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
+guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 5 is positive
 guillaume@ubuntu:~/$
 ```
@@ -93,7 +96,7 @@ guillaume@ubuntu:~/$
 - GitHub repository: holbertonschool-higher_level_programming
 - Directory: python-if_else_loops_functions
 - File: 0-positive_or_negative.py
-  
+
 
 | **1. The last digit** | mandatory |
 | ----------- | ----------- |
@@ -143,7 +146,7 @@ guillaume@ubuntu:~/$
 - GitHub repository: holbertonschool-higher_level_programming
 - Directory: python-if_else_loops_functions
 - File: 1-last_digit.py
-  
+
 
 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 mandatory
@@ -164,7 +167,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 2-print_alphabet.py
-  
+
 
 3. When I was having that alphabet soup, I never thought that it would pay off
 mandatory
@@ -186,7 +189,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 3-print_alphabt.py
-  
+
 
 4. Hexadecimal printing
 mandatory
@@ -230,7 +233,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 4-print_hexa.py
-  
+
 
 5. 00...99
 mandatory
@@ -255,7 +258,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 5-print_comb2.py
-  
+
 
 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
 mandatory
@@ -283,7 +286,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 6-print_comb3.py
-  
+
 
 7. islower
 mandatory
@@ -322,7 +325,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 7-islower.py
-  
+
 
 8. To uppercase
 mandatory
@@ -347,7 +350,7 @@ uppercase("Best School 98 Battery street")
 guillaume@ubuntu:~/$ ./8-main.py
 BEST
 BEST SCHOOL 98 BATTERY STREET
-guillaume@ubuntu:~/$ 
+guillaume@ubuntu:~/$
 ```
 
 Repo:
@@ -355,7 +358,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 8-uppercase.py
-  
+
 
 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 mandatory
@@ -386,7 +389,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 9-print_last_digit.py
-  
+
 
 10. a + b
 mandatory
@@ -418,7 +421,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 10-add.py
-  
+
 
 11. a ^ b
 mandatory
@@ -454,7 +457,7 @@ Repo:
 GitHub repository: holbertonschool-higher_level_programming
 Directory: python-if_else_loops_functions
 File: 11-pow.py
-  
+
 
 12. Fizz Buzz
 mandatory
