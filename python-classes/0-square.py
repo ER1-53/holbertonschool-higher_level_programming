@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 class Square:
 
     """
@@ -5,15 +6,3 @@ class Square:
 
     :param attribut: Description de l'attribut
     """
-    def __init__(self, attribu):
-
-        """My addition function
-
-            Args:
-                a: first integer
-                b: second integer
-
-            Returns:
-                The return value. a + b
-        """
-
