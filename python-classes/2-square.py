@@ -12,7 +12,7 @@ class Square:
     :param width: Largeur du rectangle.
     :return: L'aire du rectangle.
         """
-        if is not isintance(size, int):
+        if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise TypeError("size must be >= 0")
