@@ -8,14 +8,14 @@ It's class Square for creat a square.
 class Square:
 
     """
-It's class Square for creat a square.
-:param attribut: Description de l'attribut
+    It's class Square for creat a square.
+    :param attribut: Description de l'attribut
     """
     def __init__(self,size):
             
-            """
-            It's class Square for creat a square.
-            :param attribut: Description de l'attribut
-            """
+        """
+        Initializes a new Square object.
+        :param size: The size of the square.
+        """
 
-            self.__size = size
+        self.__size = size
