@@ -6,7 +6,7 @@ It's class Square for creat a square.
 
 class Square:
     """
-    It's class Square for creat a square.
+    Size is for define size of square.
     """
 
     def __init__(self, size=0):
