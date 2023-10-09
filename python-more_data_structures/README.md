@@ -1,16 +1,18 @@
 [![Logo](https://uploads-ssl.webflow.com/64107f65f30b69371e3d6bfa/6480d9b63a806a1b35fec007_Holberton.png)](https://www.holbertonschool.fr/?utm_source=googleads&utm_medium=cta&utm_campaign=marque&gad=1&gclid=Cj0KCQjwrMKmBhCJARIsAHuEAPR2L8kfEV4McEyqp7jnK5xo70Y-eLbuF5pkCITtfnHnuS7EXWoZzRMaAhQCEALw_wcB)
 
 
-Project badge
-Python - More Data Structures: Set, Dictionary
- Novice
- By: Guillaume
- Weight: 1
- Your score will be updated as you progress.
-Resources
-Read or watch:
+# Python - More Data Structures: Set, Dictionary
 
-Data structures
+- Novice
+- By: Guillaume
+- Weight: 1
+- Your score will be updated as you progress.
+
+## Resources
+
+### Read or watch:
+
+## Data structures
 Lambda, filter, reduce and map
 Learn to Program 12 Lambda Map Filter Reduce
 man or help:
