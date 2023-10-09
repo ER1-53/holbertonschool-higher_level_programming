@@ -55,6 +55,11 @@ class Square:
             self.__size = value
 
     def my_print(self):
+
+        """
+        for creat a physical Square
+        """
+
         if self.__size == 0:
             print()
         for i in range(self.__size):
