@@ -15,6 +15,15 @@ class Square:
         a tuple of 2 integers.
         """
 
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        elif not isinstance(position, tuple) or len(position) != 2 or \
+                not isinstance(position[0], int) or \
+                not isinstance(position[1], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+
         self.__size = size
         self.__position = position
 
