@@ -9,7 +9,7 @@ function open
 def matrix_divided(matrix, div):
     """
     divided
-    
+
     """
 
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
@@ -23,8 +23,10 @@ def matrix_divided(matrix, div):
     
     result = []
     for row in matrix:
+        row_in_result = []
         for element in row:
-            result.append(round((element / div), 2))
+            row_in_result.append(round((element / div), 2))
+        result.append(row_in_result)
     return result
     
     
