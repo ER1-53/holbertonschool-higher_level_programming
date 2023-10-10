@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-Add two integers or floats and return the result as an integer.
+Add two integers or
+floats and return
+the result as an
+integer.
 """
 
 
 def add_integer(a, b=98):
     """
     Add two numbers and return the result as an integer.
-
     :param a: The first number (integer or float).
     :param b: The second number (integer or float).
     :return: The sum of a and b as an integer.
