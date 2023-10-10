@@ -13,19 +13,17 @@ def matrix_divided(matrix, div):
     :return: A new matrix with the results of the division.
     """
 
-    if not isinstance(matrix, list) or \
+    if not isinstance(matrix, list) or len(matrix) == 0 or \
             not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix \
             list of lists) of integers/floats")
-    elif len(matrix[0]) != len(matrix[1]):
+    elif any(len(matrix[i]) != len(matrix[i + 1]) for i in matrix):
         raise TypeError("Each row of the matrix \
              must have the same size")
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     elif div == 0:
         raise ZeroDivisionError("division by zero")
-    if len(matrix) < 2:
-        raise TypeError
 
     result = []
     for row in matrix:
