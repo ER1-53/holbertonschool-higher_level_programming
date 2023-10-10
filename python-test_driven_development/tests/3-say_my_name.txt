@@ -1,1 +1,15 @@
->>> add_integer = __import__("0-add_integer").add_integer
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+>>> say_my_name("bob", "Mike")
+My name is bob Mike
+
+>>> say_my_name("Boby")
+My name is Boby 
+
+>>> say_my_name("Blob", 42)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name(21, "Cohort")
+Traceback (most recent call last):
+TypeError: first_name must be a string
