@@ -9,7 +9,7 @@ function open
 def matrix_divided(matrix, div):
     """
     divided
-
+    
     """
 
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
