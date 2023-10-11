@@ -26,10 +26,6 @@ Args:
         if height < 0:
             raise ValueError("height must be >= 0")
 
-    """
-    je ne saisp as encore
-    """
-
     @property
     def width(self):
         return self.__width
@@ -41,10 +37,6 @@ Args:
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-
-    """
-    je ne saisp as encore
-    """
 
     @property
     def height(self):
