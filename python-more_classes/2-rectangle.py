@@ -58,5 +58,5 @@ Args:
         if self.__width == 0 or self.__height == 0:
             perim_result = 0
         else:
-            perim_result = (self.__width * self.__height) * 2
+            perim_result = (self.__width + self.__height) * 2
         return perim_result
