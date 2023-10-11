@@ -1,1 +1,25 @@
->>> add_integer = __import__("0-add_integer").add_integer
+>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit!Quonam modo""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit!Quonam modo
+
+>>> text_indentation()
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation("""LoremipsumdolorsitametconsecteturadipiscingelitQuonammodo""")
+LoremipsumdolorsitametconsecteturadipiscingelitQuonammodo
+
+>>> text_indentation(12)
+Traceback (most recent call last):
+TypeError: text must be a string
+
+
+>>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit.Quonam modo?""")
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<BLANKLINE>
+Quonam modo?
+<BLANKLINE>
+
