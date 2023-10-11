@@ -10,7 +10,7 @@ class test_unit(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
         If the list is empty, the function returns None
     """
-    def test_max_int(self):
+    def test_max_end(self):
         numbers = [1, 2, 3, 4]
         max_value = max_integer(numbers)
         self.assertEqual(max_value, 4)
@@ -30,8 +30,18 @@ class test_unit(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_value = max_integer(numbers)
 
-
     def test_max_allsame(self):
             numbers = [4, 4, 4, 4]
             max_value = max_integer(numbers)
             self.assertEqual(max_value, 4)
+
+    def test_max_with_2int(self):
+            numbers = [1, 21]
+            max_value = max_integer(numbers)
+            self.assertEqual(max_value, 21)
+
+    def test_max_start(self):
+            numbers = [51, 21, 15, 12]
+            max_value = max_integer(numbers)
+            self.assertEqual(max_value, 51)
+
