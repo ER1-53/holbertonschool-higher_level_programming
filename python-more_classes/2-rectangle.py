@@ -49,3 +49,11 @@ Args:
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
+
+    def area(self):
+        area_result = self.__width * self.__height
+        return area_result
+
+    def perimeter(self):
+        perim_result = (self.__width * self.__height) * 2
+        return perim_result
