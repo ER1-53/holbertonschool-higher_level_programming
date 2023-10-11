@@ -55,5 +55,8 @@ Args:
         return area_result
 
     def perimeter(self):
-        perim_result = (self.__width * self.__height) * 2
+        if self.__width == 0 or self.__height == 0:
+            perim_result = 0
+        else:
+            perim_result = (self.__width * self.__height) * 2
         return perim_result
