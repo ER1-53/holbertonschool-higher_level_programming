@@ -45,3 +45,8 @@ class test_unit(unittest.TestCase):
             max_value = max_integer(numbers)
             self.assertEqual(max_value, 51)
 
+    def test_max_mddl(self):
+            numbers = [15, 21, 51, 12]
+            max_value = max_integer(numbers)
+            self.assertEqual(max_value, 51)
+

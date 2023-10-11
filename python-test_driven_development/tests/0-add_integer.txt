@@ -12,7 +12,7 @@
 >>> add_integer(-95.5, 98)
 3
 
->>> add_integer(None)
+>>> add_integer(None, 12)
 Traceback (most recent call last):
 TypeError: a must be an integer
 
