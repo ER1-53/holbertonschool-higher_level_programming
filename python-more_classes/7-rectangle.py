@@ -30,7 +30,6 @@ Args:
         if height < 0:
             raise ValueError("height must be >= 0")
         Rectangle.number_of_instances += 1
-        self.print_symbol = "#"
 
     @property
     def width(self):
