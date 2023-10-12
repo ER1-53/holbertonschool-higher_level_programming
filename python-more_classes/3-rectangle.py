@@ -26,11 +26,6 @@ Args:
         if height < 0:
             raise ValueError("height must be >= 0")
 
-
-
-
-
-
     @property
     def width(self):
         return self.__width
@@ -75,4 +70,3 @@ Args:
                 for element in range(self.__width):
                     rectangle_string += "#"
         return rectangle_string
-
