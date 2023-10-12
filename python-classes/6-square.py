@@ -5,20 +5,20 @@ It's class Square for creat a square.
 
 
 class Square:
-    def __init__(self, size=0, position=(0, 0)):
 
-        """
+    """
         Initializes a new Square object with a given size and position.
         :param size: The side length of the square.
         :param position: A tuple representing the position of the square.
-        """
+    """
 
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
-        
+
         self.__position = position
         if not isinstance(position, tuple) or len(position) != 2 or \
             not isinstance(position[0], int) or not isinstance(position[1], int) or \
