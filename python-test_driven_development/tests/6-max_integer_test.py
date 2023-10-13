@@ -54,7 +54,7 @@ class test_unit(unittest.TestCase):
           self.assertEqual(max_integer([4, 3, 2, 1]), 4)
 
     def test_decroissant(self):
-          self.assertEqual(max_integer([4, 3, 8.5, 1]), 8.5)
+        self.assertEqual(max_integer([4, 3, 8.5, 1]), 8.5)
+        self.assertEqual(max_integer(""), None)
+        self.assertEqual(max_integer([]), None)
 
-if __name__ == '__main__':
-      unittest.main()
