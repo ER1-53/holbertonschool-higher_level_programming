@@ -50,3 +50,6 @@ class test_unit(unittest.TestCase):
             max_value = max_integer(numbers)
             self.assertEqual(max_value, 51)
 
+    def test_decroissant(self):
+          self.assertEqual(max_integer([4, 3, 2, 1]), 4)
+
