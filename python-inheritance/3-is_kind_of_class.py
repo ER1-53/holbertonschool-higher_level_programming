@@ -11,4 +11,4 @@ attribut and methode"""
     print(type(obj))
     if type(obj) is a_class or issubclass(type(obj), a_class):
         return True
-    return True
+    return False
