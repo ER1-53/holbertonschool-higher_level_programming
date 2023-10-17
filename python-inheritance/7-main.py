@@ -1,23 +1,22 @@
 #!/usr/bin/python3
-BaseGeometry = __import__(&#39;7-base_geometry&#39;).BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 bg = BaseGeometry()
 
-bg.integer_validator(&quot;my_int&quot;, 12)
-bg.integer_validator(&quot;width&quot;, 89)
+bg.integer_validator("my_int", 12)
+bg.integer_validator("width", 89)
 
 try:
-    bg.integer_validator(&quot;name&quot;, &quot;John&quot;)
+    bg.integer_validator("name", "John")
 except Exception as e:
-    print(&quot;[{}] {}&quot;.format(e.__class__.__name__, e))
+    print("[{}] {}".format(e.__class__.__name__, e))
 
 try:
-    bg.integer_validator(&quot;age&quot;, 0)
+    bg.integer_validator("my_int", 12, "hate")
 except Exception as e:
-    print(&quot;[{}] {}&quot;.format(e.__class__.__name__, e))
+    print("[{}] {}".format(e.__class__.__name__, e))
 
 try:
-    bg.integer_validator(&quot;distance&quot;, -4)
+    bg.integer_validator("distance", -4)
 except Exception as e:
-    print(&quot;[{}] {}&quot;.format(e.__class__.__name__, e))
-
+    print("[{}] {}".format(e.__class__.__name__, e))
