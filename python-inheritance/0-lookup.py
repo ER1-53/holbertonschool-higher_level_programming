@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""function that prints the list of 
+"""function that prints the list of
 attribut and methode"""
 
 
