@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+Student = __import__(&#39;10-student&#39;).Student
+
+student_1 = Student(&quot;John&quot;, &quot;Doe&quot;, 23)
+student_2 = Student(&quot;Bob&quot;, &quot;Dylan&quot;, 27)
+
+j_student_1 = student_1.to_json()
+j_student_2 = student_2.to_json([&#39;first_name&#39;, &#39;age&#39;])
+j_student_3 = student_2.to_json([&#39;middle_name&#39;, &#39;age&#39;])
+
+print(j_student_1)
+print(j_student_2)
+print(j_student_3)
+

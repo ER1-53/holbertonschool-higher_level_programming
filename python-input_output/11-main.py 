@@ -1,0 +1,43 @@
+#!/usr/bin/python3
+import os
+import sys
+
+Student = __import__(&#39;11-student&#39;).Student
+read_file = __import__(&#39;0-read_file&#39;).read_file
+save_to_json_file = __import__(&#39;5-save_to_json_file&#39;).save_to_json_file
+load_from_json_file = __import__(&#39;6-load_from_json_file&#39;).load_from_json_file
+
+path = sys.argv[1]
+
+if os.path.exists(path):
+    os.remove(path)
+
+student_1 = Student(&quot;John&quot;, &quot;Doe&quot;, 23)
+j_student_1 = student_1.to_json()
+print(&quot;Initial student:&quot;)
+print(student_1)
+print(type(student_1))
+print(type(j_student_1))
+print(&quot;{} {} {}&quot;.format(student_1.first_name, student_1.last_name, student_1.age))
+
+
+save_to_json_file(j_student_1, path)
+read_file(path)
+print(&quot;\nSaved to disk&quot;)
+
+
+print(&quot;Fake student:&quot;)
+new_student_1 = Student(&quot;Fake&quot;, &quot;Fake&quot;, 89)
+print(new_student_1)
+print(type(new_student_1))
+print(&quot;{} {} {}&quot;.format(new_student_1.first_name, new_student_1.last_name, new_student_1.age))
+
+
+print(&quot;Load dictionary from file:&quot;)
+new_j_student_1 = load_from_json_file(path)
+
+new_student_1.reload_from_json(j_student_1)
+print(new_student_1)
+print(type(new_student_1))
+print(&quot;{} {} {}&quot;.format(new_student_1.first_name, new_student_1.last_name, new_student_1.age))
+

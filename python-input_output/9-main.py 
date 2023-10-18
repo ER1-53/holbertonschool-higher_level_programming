@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+Student = __import__(&#39;9-student&#39;).Student
+
+students = [Student(&quot;John&quot;, &quot;Doe&quot;, 23), Student(&quot;Bob&quot;, &quot;Dylan&quot;, 27)]
+
+for student in students:
+    j_student = student.to_json()
+    print(type(j_student))
+    print(j_student[&#39;first_name&#39;])
+    print(type(j_student[&#39;first_name&#39;]))
+    print(j_student[&#39;age&#39;])
+    print(type(j_student[&#39;age&#39;]))
+
