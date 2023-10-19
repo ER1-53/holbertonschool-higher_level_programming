@@ -16,4 +16,3 @@ class Student:
             'last_name': self.last_name,
             'age': self.age
         }
-    

@@ -4,4 +4,6 @@ import json
 
 
 def class_to_json(obj):
+    """ function for write file"""
+
     return obj.__dict__
