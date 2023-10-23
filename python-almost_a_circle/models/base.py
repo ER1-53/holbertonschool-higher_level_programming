@@ -3,7 +3,7 @@
 
 
 class Base:
-    """ function for read file"""
+    """ base fonction"""
     __nb_objects = 0
 
     def __init__(self, id=None):
