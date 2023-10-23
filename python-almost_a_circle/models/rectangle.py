@@ -101,9 +101,11 @@ class Rectangle(Base):
                 print("#", end='')
             print()"""
         """for row in range(self.__height):
-            print("#" * self.__width)"""
+            print("".join(["#" for _ in range(self.__width)]))"""
+        for x in range(self.y):
+            print()
         for row in range(self.__height):
-            print("".join(["#" for _ in range(self.__width)]))
+            print(" " * self.y + "#" * self.__width)
 
     def __str__(self):
         """Display informations"""
