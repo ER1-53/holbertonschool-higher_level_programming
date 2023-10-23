@@ -107,4 +107,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """Display informations"""
-        return f"[{self.__class__.__name__}] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+        class_name = self.__class__.__name__
+        id = self.id
+        w = self.width
+        h = self.height
+        # adaptation for pystylecode
+        return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}/{h}"
