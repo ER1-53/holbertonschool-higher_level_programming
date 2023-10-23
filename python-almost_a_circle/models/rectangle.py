@@ -102,10 +102,10 @@ class Rectangle(Base):
             print()"""
         """for row in range(self.__height):
             print("".join(["#" for _ in range(self.__width)]))"""
-        for x in range(self.y):
+        for y in range(self.y):
             print()
         for row in range(self.__height):
-            print(" " * self.y + "#" * self.__width)
+            print(" " * self.x + "#" * self.__width)
 
     def __str__(self):
         """Display informations"""
