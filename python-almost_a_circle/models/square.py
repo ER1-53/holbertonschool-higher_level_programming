@@ -23,6 +23,7 @@ class Square(Rectangle):
         super().update(*args, **kwargs)
 
     def to_dictionary(self):
+        """__dict__"""
         return {
                 'id': self.id,
                 'x': self.x,
