@@ -19,4 +19,5 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
+        """update from parents Rectangle"""
         super().update(*args, **kwargs)
