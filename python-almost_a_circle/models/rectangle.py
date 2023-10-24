@@ -121,7 +121,10 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update all attribut """
-        attribute_names = ['id', 'width', 'height', 'x', 'y']
+        if self.width != self.height:
+            attribute_names = ['id', 'width', 'height', 'x', 'y']
+        else:
+            attribute_names = ["id", "size", "x", "y"]   
         if len(args) > 0:
             for i in range(min(len(args), len(attribute_names))):
                 setattr(self, attribute_names[i], args[i])
