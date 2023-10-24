@@ -6,6 +6,7 @@ import json
 class Base:
     """ base fonction"""
     __nb_objects = 0
+    display_n = 0
 
     def __init__(self, id=None):
         if id:
@@ -14,6 +15,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """Return JSON string representation"""
         if list_dictionaries is None:
