@@ -21,3 +21,11 @@ class Square(Rectangle):
     def update(self, *args, **kwargs):
         """update from parents Rectangle"""
         super().update(*args, **kwargs)
+
+    def to_dictionary(self):
+        return {
+                'id': self.id,
+                'x': self.x,
+                'size': self.height,
+                'y': self.y
+            }

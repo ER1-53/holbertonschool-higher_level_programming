@@ -124,10 +124,20 @@ class Rectangle(Base):
         if self.width != self.height:
             attribute_names = ['id', 'width', 'height', 'x', 'y']
         else:
-            attribute_names = ["id", "size", "x", "y"]   
+            attribute_names = ["id", "size", "x", "y"]
         if len(args) > 0:
             for i in range(min(len(args), len(attribute_names))):
                 setattr(self, attribute_names[i], args[i])
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """__dict__"""
+        return {
+                'x': self.x,
+                'y': self.y,
+                'id': self.id,
+                'height': self.height,
+                'width': self.width
+            }
