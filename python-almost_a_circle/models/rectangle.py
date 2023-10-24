@@ -117,6 +117,7 @@ class Rectangle(Base):
         return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}/{h}"
     
     def update(self, *args):
+        """Update all attribut """
         attribute_names = ['id', 'width', 'height', 'x', 'y']
 
         for i in range(min(len(args), len(attribute_names))):
