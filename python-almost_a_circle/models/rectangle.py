@@ -115,10 +115,9 @@ class Rectangle(Base):
         h = self.height
         # adaptation for pystylecode
         return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}/{h}"
-    
+
     def update(self, *args):
         """Update all attribut """
         attribute_names = ['id', 'width', 'height', 'x', 'y']
-
         for i in range(min(len(args), len(attribute_names))):
             setattr(self, attribute_names[i], args[i])
