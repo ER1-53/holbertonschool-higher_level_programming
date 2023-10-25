@@ -2,6 +2,8 @@
 """Module to test the condition of max integer in a list
 """
 import unittest
+import sys
+from io import StringIO 
 from models.rectangle import Rectangle
 
 class Test_Rectangle(unittest.TestCase):
@@ -11,7 +13,7 @@ class Test_Rectangle(unittest.TestCase):
 
     def test_init(self):
         r = Rectangle(2, 3)
-        self.assertEqual(r.id, 10)
+        self.assertEqual(r.id, 12)
         self.assertEqual(r.width, 2)
         self.assertEqual(r.height, 3)
 
@@ -46,6 +48,26 @@ class Test_Rectangle(unittest.TestCase):
     def test_area(self):
         r = Rectangle(2, 3)
         self.assertEqual(r.area(), 6)
+
+    def test_area_revers(self):
+        r = Rectangle(3, 2)
+        self.assertEqual(r.area(), 6)
+
+    def test_area_bigger(self):
+        r = Rectangle(2, 10)
+        self.assertEqual(r.area(), 20)
+
+    def test_area_with_other_parameter(self):
+        r = Rectangle(8, 7, 0, 0, 12)
+        self.assertEqual(r.area(), 56)
+
+    def test_area_with_other_parameter(self):
+        r1 = Rectangle(2, 3, 2, 2)
+        captured_output = StringIO()
+        sys.stdout = captured_output
+        r1.display()
+        sys.stdout = sys.__stdout__
+        self.assertEqual(captured_output.getvalue(), "\n\n  ##\n  ##\n  ##\n")
 
 if __name__ == '__main__':
     unittest.main()

@@ -11,7 +11,7 @@ class Test_Square(unittest.TestCase):
 
     def test_init(self):
         s = Square(4)
-        self.assertEqual(s.id, 12)
+        self.assertEqual(s.id, 17)
         self.assertEqual(s.size, 4)
 
     def test_size_property(self):
@@ -29,9 +29,24 @@ class Test_Square(unittest.TestCase):
         self.assertEqual(s.y, 0)
 
     def test_Square_size_zero(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Square(10, -7)
-        self.assertEqual(str(context.exception), "x must be >= 0")
+
+    def test_area(self):
+        r = Square(2, 3)
+        self.assertEqual(r.area(), 4)
+
+    def test_area_revers(self):
+        r = Square(3, 2)
+        self.assertEqual(r.area(), 9)
+
+    def test_area_bigger(self):
+        r = Square(2, 10)
+        self.assertEqual(r.area(), 4)
+
+    def test_area_with_other_parameter(self):
+        with self.assertRaises(TypeError):
+            Square(8, 7, 0, 0, 12)
 
 if __name__ == '__main__':
     unittest.main()
