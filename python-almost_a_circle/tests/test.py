@@ -12,7 +12,18 @@ class Test_Base(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
         If the list is empty, the function returns None
     """
-
+    def test_base_initialization_id(self):
+        b1 = Base()
+        self.assertEqual(b1.id, 1)
+        b2 = Base()
+        self.assertEqual(b2.id, 2)
+        b3 = Base()
+        self.assertEqual(b3.id, 3)
+        b4 = Base(12)
+        self.assertEqual(b4.id, 12)
+        b5 = Base()
+        self.assertEqual(b5.id, 4)
+    
     def test_init(self):
         b = Base()
         self.assertEqual(b.id, 1)
@@ -121,7 +132,7 @@ class Test_JSON(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
         If the list is empty, the function returns None
     """
-    
+
     def test_to_json_string(self):
         b = Base(1)
         expected_result = '[{"id": 1}]'
