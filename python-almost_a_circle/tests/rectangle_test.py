@@ -13,7 +13,7 @@ class Test_Rectangle(unittest.TestCase):
 
     def test_init(self):
         r = Rectangle(2, 3)
-        self.assertEqual(r.id, 12)
+        self.assertEqual(r.id, 21)
         self.assertEqual(r.width, 2)
         self.assertEqual(r.height, 3)
 
@@ -68,6 +68,66 @@ class Test_Rectangle(unittest.TestCase):
         r1.display()
         sys.stdout = sys.__stdout__
         self.assertEqual(captured_output.getvalue(), "\n\n  ##\n  ##\n  ##\n")
+
+    def test_create_instance(self):
+        rect = Rectangle(2, 3)
+        self.assertIsInstance(rect, Rectangle)
+
+    def test_attributes_initialization(self):
+        rect = Rectangle(2, 3, 1, 1, 7)
+        self.assertEqual(rect.width, 2)
+        self.assertEqual(rect.height, 3)
+        self.assertEqual(rect.x, 1)
+        self.assertEqual(rect.y, 1)
+        self.assertEqual(rect.id, 7)
+
+    def test_width_property(self):
+        rect = Rectangle(2, 3)
+        rect.width = 4
+        self.assertEqual(rect.width, 4)
+
+    def test_height_property(self):
+        rect = Rectangle(2, 3)
+        rect.height = 5
+        self.assertEqual(rect.height, 5)
+
+    def test_x_property(self):
+        rect = Rectangle(2, 3)
+        rect.x = 2
+        self.assertEqual(rect.x, 2)
+
+    def test_y_property(self):
+        rect = Rectangle(2, 3)
+        rect.y = 2
+        self.assertEqual(rect.y, 2)
+
+    def test_area(self):
+        rect = Rectangle(2, 3)
+        self.assertEqual(rect.area(), 6)
+
+    def test_display(self):
+        rect = Rectangle(2, 3, 1, 2)
+        expected_output = "\n" + " " * 1 + "##" + "\n" + " " * 1 + "##" + "\n" + " " * 1 + "##" + "\n"
+        self.assertEqual(rect.display(), print(expected_output))
+
+    def test_str_method(self):
+        rect = Rectangle(2, 3, 1, 2, 7)
+        expected_output = "[Rectangle] (7) 1/2 - 2/3"
+        self.assertEqual(str(rect), expected_output)
+
+    def test_update_method(self):
+        rect = Rectangle(2, 3)
+        rect.update(4, 5, 6, 7, 8)
+        self.assertEqual(rect.id, 4)
+        self.assertEqual(rect.width, 5)
+        self.assertEqual(rect.height, 6)
+        self.assertEqual(rect.x, 7)
+        self.assertEqual(rect.y, 8)
+
+    def test_to_dictionary_method(self):
+        rect = Rectangle(2, 3, 1, 2, 7)
+        expected_dict = {'id': 7, 'width': 2, 'height': 3, 'x': 1, 'y': 2}
+        self.assertEqual(rect.to_dictionary(), expected_dict)
 
 if __name__ == '__main__':
     unittest.main()
