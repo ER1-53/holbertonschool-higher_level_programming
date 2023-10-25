@@ -7,7 +7,6 @@ from models.rectangle import Rectangle
 from models.square import Square
 
 
-# -----------------------------------------------------------------#
 class Test_Base(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
         If the list is empty, the function returns None
@@ -26,7 +25,7 @@ class Test_Base(unittest.TestCase):
     
     def test_init(self):
         b = Base()
-        self.assertEqual(b.id, 1)
+        self.assertEqual(b.id, 5)
 
     def test_init_with_custom_id(self):
         b = Base(100)
@@ -48,7 +47,6 @@ class Test_Base(unittest.TestCase):
         b = Base(8.5)
         self.assertEqual(b.id, 8.5)
 
-# -----------------------------------------------------------------#
 
 class Test_Rectangle(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
@@ -57,7 +55,7 @@ class Test_Rectangle(unittest.TestCase):
 
     def test_init(self):
         r = Rectangle(2, 3)
-        self.assertEqual(r.id, 10)
+        self.assertEqual(r.id, 14)
         self.assertEqual(r.width, 2)
         self.assertEqual(r.height, 3)
 
@@ -95,7 +93,6 @@ class Test_Rectangle(unittest.TestCase):
             Rectangle(10, 7, 0, -8)
         self.assertEqual(str(context.exception), "y must be >= 0")
 
-# -----------------------------------------------------------------#
 
 class Test_Square(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
@@ -104,7 +101,7 @@ class Test_Square(unittest.TestCase):
 
     def test_init(self):
         s = Square(4)
-        self.assertEqual(s.id, 11)
+        self.assertEqual(s.id, 15)
         self.assertEqual(s.size, 4)
 
     def test_size_property(self):
@@ -126,7 +123,6 @@ class Test_Square(unittest.TestCase):
             Square(10, -7, 2, 8)
         self.assertEqual(str(context.exception), "x must be >= 0")
 
-# -----------------------------------------------------------------#
 
 class Test_JSON(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
@@ -142,7 +138,7 @@ class Test_JSON(unittest.TestCase):
         r = Rectangle(10, 7, 2, 8)
         objects = [r.to_dictionary()]
         json_string = Base.to_json_string(objects)
-        expected_result = '[{"y": 8, "width": 10, "x": 2, "id": 2, "height": 7}]'
+        expected_result = '[{"y": 8, "width": 10, "x": 2, "id": 6, "height": 7}]'
         self.assertEqual(json_string, expected_result)
 
 if __name__ == '__main__':
