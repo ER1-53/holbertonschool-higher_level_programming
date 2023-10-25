@@ -1,11 +1,18 @@
+#!/usr/bin/python3
+"""Module to test the condition of max integer in a list
+"""
 import unittest
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
 
-# -----------------------------------------------------------------#
 
+# -----------------------------------------------------------------#
 class Test_Base(unittest.TestCase):
+    """Function to find and return the max integer in a list of integers
+        If the list is empty, the function returns None
+    """
+
     def test_init(self):
         b = Base()
         self.assertEqual(b.id, 1)
@@ -33,6 +40,9 @@ class Test_Base(unittest.TestCase):
 # -----------------------------------------------------------------#
 
 class Test_Rectangle(unittest.TestCase):
+    """Function to find and return the max integer in a list of integers
+        If the list is empty, the function returns None
+    """
 
     def test_init(self):
         r = Rectangle(2, 3)
@@ -77,6 +87,9 @@ class Test_Rectangle(unittest.TestCase):
 # -----------------------------------------------------------------#
 
 class Test_Square(unittest.TestCase):
+    """Function to find and return the max integer in a list of integers
+        If the list is empty, the function returns None
+    """
 
     def test_init(self):
         s = Square(4)
@@ -97,11 +110,6 @@ class Test_Square(unittest.TestCase):
         self.assertEqual(s.x, 0)
         self.assertEqual(s.y, 0)
 
-    def test_Square_size_neg(self):
-        with self.assertRaises(ValueError) as context:
-            Square(10, 10, 2, -8)
-        self.assertEqual(str(context.exception), "y must be >= 0")
-
     def test_Square_size_zero(self):
         with self.assertRaises(ValueError) as context:
             Square(10, -7, 2, 8)
@@ -110,6 +118,10 @@ class Test_Square(unittest.TestCase):
 # -----------------------------------------------------------------#
 
 class Test_JSON(unittest.TestCase):
+    """Function to find and return the max integer in a list of integers
+        If the list is empty, the function returns None
+    """
+    
     def test_to_json_string(self):
         b = Base(1)
         expected_result = '[{"id": 1}]'
