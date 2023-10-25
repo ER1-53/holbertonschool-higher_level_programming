@@ -45,10 +45,7 @@ class Test_Base(unittest.TestCase):
         self.assertEqual(b.id, 8.5)
 
 
-class Test_Rectangle(unittest.TestCase):
-    """Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
-    """
+    """test rectangle"""
 
     def test_init(self):
         r = Rectangle(2, 3)
@@ -91,11 +88,7 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(str(context.exception), "y must be >= 0")
 
 
-class Test_Square(unittest.TestCase):
-    """Function to find and return the max integer in a list of integers
-        If the list is empty, the function returns None
-    """
-
+    """test square"""
     def test_init(self):
         s = Square(4)
         self.assertEqual(s.id, 15)
