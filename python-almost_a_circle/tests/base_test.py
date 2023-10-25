@@ -67,5 +67,13 @@ class Test_Base(unittest.TestCase):
     def test_load_from_file(self):
         pass
 
+    def test_to_json_string_with_none(self):
+        json_str = Base.to_json_string(None)
+        self.assertEqual(json_str, "[]")
+
+    def test_from_json_string_with_none(self):
+        obj_list = Base.from_json_string(None)
+        self.assertEqual(obj_list, [])
+
 if __name__ == '__main__':
     unittest.main()
