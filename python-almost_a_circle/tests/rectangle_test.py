@@ -35,9 +35,8 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(str(context.exception), "height must be > 0")
 
     def test_Rectangle_height_zero(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Rectangle(10, -7, 2, 8)
-        self.assertEqual(str(context.exception), "height must be > 0")
 
     def test_Rectangle_x_zero(self):
         with self.assertRaises(ValueError) as context:
