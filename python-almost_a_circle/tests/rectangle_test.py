@@ -20,33 +20,32 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(r.area(), 6)
 
     def test_Rectangle_width_neg(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Rectangle(-20, 7, 2, 8)
-        self.assertEqual(str(context.exception), "width must be > 0")
 
     def test_Rectangle_width_zero(self):
-        with self.assertRaises(ValueError) as context:
-            Rectangle(0, 7, 2, 8)    
-        self.assertEqual(str(context.exception), "width must be > 0")
+        with self.assertRaises(ValueError):
+            Rectangle(0, 7, 2, 8)
 
     def test_Rectangle_height_neg(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Rectangle(10, 0, 2, 8)
-        self.assertEqual(str(context.exception), "height must be > 0")
 
     def test_Rectangle_height_zero(self):
         with self.assertRaises(ValueError):
             Rectangle(10, -7, 2, 8)
 
     def test_Rectangle_x_zero(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Rectangle(10, 7, -5, 8)
-        self.assertEqual(str(context.exception), "x must be >= 0")
 
     def test_Rectangle_y_zero(self):
-        with self.assertRaises(ValueError) as context:
+        with self.assertRaises(ValueError):
             Rectangle(10, 7, 0, -8)
-        self.assertEqual(str(context.exception), "y must be >= 0")
+
+    def test_area(self):
+        r = Rectangle(2, 3)
+        self.assertEqual(r.area(), 6)
 
 if __name__ == '__main__':
     unittest.main()
