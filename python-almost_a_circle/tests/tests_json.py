@@ -20,7 +20,7 @@ class Test_JSON(unittest.TestCase):
         r = Rectangle(10, 7, 2, 8)
         objects = [r.to_dictionary()]
         json_string = Base.to_json_string(objects)
-        expected_result = '[{"y": 8, "width": 10, "x": 2, "id": 12, "height": 7}]'
+        expected_result = '[{"y": 8, "width": 10, "x": 2, "id": 14, "height": 7}]'
         self.assertEqual(json_string, expected_result)
 
     def test_to_json_string_with_none(self):

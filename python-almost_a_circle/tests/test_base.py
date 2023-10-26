@@ -57,11 +57,16 @@ class Test_Base(unittest.TestCase):
         obj = Base()
         obj.save_to_file([])
 
-    def test_create(self):
-        with self.assertRaises(TypeError):
-            dummy_dict = {'id': 1, 'name': 'test'}
-            obj = Base.create(**dummy_dict)
-            self.assertEqual(obj.id, 1)
+    def test_rectangle_create_and_to_dictionary(self):
+        r1 = Rectangle(3, 5, 1)
+        r1_dictionary = r1.to_dictionary()
+        r2 = Rectangle.create(**r1_dictionary)
+        self.assertIsNot(r1, r2)
+        self.assertEqual(r1.id, r2.id)
+        self.assertEqual(r1.width, r2.width)
+        self.assertEqual(r1.height, r2.height)
+        self.assertEqual(r1.x, r2.x)
+        self.assertEqual(r1.y, r2.y)
 
     def test_load_from_file(self):
         pass

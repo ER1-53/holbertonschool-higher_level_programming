@@ -16,7 +16,7 @@ class Test_Square(unittest.TestCase):
 
     def test_init(self):
         s = Square(4)
-        self.assertEqual(s.id, 143)
+        self.assertEqual(s.id, 150)
         self.assertEqual(s.size, 4)
 
     def test_size_property(self):
@@ -140,41 +140,24 @@ class Test_Square(unittest.TestCase):
         expected_dict = {'id': 9, 'size': 3, 'x': 2, 'y': 1}
         self.assertEqual(square_dict, expected_dict)
 
-    def test_load_from_file(cls):
-        r1 = Rectangle(10, 7, 2, 8)
-        r2 = Rectangle(2, 4)
-        list_rectangles_input = [r1, r2]
-
-        Rectangle.save_to_file(list_rectangles_input)
-
-        list_rectangles_output = Rectangle.load_from_file()
-
-        for rect in list_rectangles_input:
-            print("[{}] {}".format(id(rect), rect))
-
-        print("---")
-
-        for rect in list_rectangles_output:
-            print("[{}] {}".format(id(rect), rect))
-
-        print("---")
-        print("---")
-
+    def test_load_and_save_for_squares(self):
+        # Create some squares
         s1 = Square(5)
         s2 = Square(7, 9, 1)
         list_squares_input = [s1, s2]
 
+        # Save squares to a file
         Square.save_to_file(list_squares_input)
 
+        # Load squares from the file
         list_squares_output = Square.load_from_file()
 
-        for square in list_squares_input:
-            print("[{}] {}".format(id(square), square))
-
-        print("---")
-
-        for square in list_squares_output:
-            print("[{}] {}".format(id(square), square))
+        # Check if loaded data is identical to input data
+        for square_in, square_out in zip(list_squares_input, list_squares_output):
+            self.assertEqual(square_in.id, square_out.id)
+            self.assertEqual(square_in.size, square_out.size)
+            self.assertEqual(square_in.x, square_out.x)
+            self.assertEqual(square_in.y, square_out.y)
 
 # ------------------------------------- #
 

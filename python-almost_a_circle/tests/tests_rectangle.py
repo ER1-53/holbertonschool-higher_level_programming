@@ -15,7 +15,7 @@ class Test_Rectangle(unittest.TestCase):
 
     def test_init(self):
         r = Rectangle(2, 3)
-        self.assertEqual(r.id, 45)
+        self.assertEqual(r.id, 47)
         self.assertEqual(r.width, 2)
         self.assertEqual(r.height, 3)
 
@@ -208,7 +208,7 @@ class Test_Rectangle(unittest.TestCase):
     def test_to_dictionary_default_values(self):
         # Create a Rectangle with default values
         rect = Rectangle(1, 1)
-        expected_dict = {'id': 97, 'width': 1, 'height': 1, 'x': 0, 'y': 0}
+        expected_dict = {'id': 104, 'width': 1, 'height': 1, 'x': 0, 'y': 0}
         self.assertEqual(rect.to_dictionary(), expected_dict)
 
     def test_to_dictionary_non_default_values(self):
@@ -236,6 +236,26 @@ class Test_Rectangle(unittest.TestCase):
         self.assertEqual(rect1.to_dictionary(), expected_dict1)
         self.assertEqual(rect2.to_dictionary(), expected_dict2)
         self.assertEqual(rect3.to_dictionary(), expected_dict3)
+
+    def test_load_and_save_for_rectangles(self):
+        # Create some rectangles
+        r1 = Rectangle(10, 7, 2, 8)
+        r2 = Rectangle(2, 4)
+        list_rectangles_input = [r1, r2]
+
+        # Save rectangles to a file
+        Rectangle.save_to_file(list_rectangles_input)
+
+        # Load rectangles from the file
+        list_rectangles_output = Rectangle.load_from_file()
+
+        # Check if loaded data is identical to input data
+        for rect_in, rect_out in zip(list_rectangles_input, list_rectangles_output):
+            self.assertEqual(rect_in.id, rect_out.id)
+            self.assertEqual(rect_in.width, rect_out.width)
+            self.assertEqual(rect_in.height, rect_out.height)
+            self.assertEqual(rect_in.x, rect_out.x)
+            self.assertEqual(rect_in.y, rect_out.y)
 
 # ------------------------------------------------#
 
