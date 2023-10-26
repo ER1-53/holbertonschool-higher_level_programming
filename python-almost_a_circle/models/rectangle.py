@@ -114,10 +114,7 @@ class Rectangle(Base):
         w = self.width
         h = self.height
         # adaptation for pystylecode
-        if w != h:
-            return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}/{h}"
-        else:
-            return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}"
+        return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}/{h}"
 
     def update(self, *args, **kwargs):
         """Update all attribut """

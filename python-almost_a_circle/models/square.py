@@ -18,6 +18,13 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def __str__(self):
+        """Display informations"""
+        class_name = self.__class__.__name__
+        id = self.id
+        w = self.width
+        return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}"
+    
     def update(self, *args, **kwargs):
         """update from parents Rectangle"""
         super().update(*args, **kwargs)
