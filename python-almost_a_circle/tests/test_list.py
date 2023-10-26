@@ -14,23 +14,14 @@ class Test_General(unittest.TestCase):
     """Function to find and return the max integer in a list of integers
         If the list is empty, the function returns None
     """
-    def test_rectangle_display(self):
-        r1 = Rectangle(4, 6)
-        expected_output = "####\n####\n####\n####\n####\n####\n"
-        
-        with unittest.mock.patch('sys.stdout', new_callable=StringIO) as mock_stdout:
-            r1.display()
-            self.assertEqual(mock_stdout.getvalue(), expected_output)
+    def test_rectangle_str(self):
+        r1 = Rectangle(4, 6, 2, 1, 12)
+        expected_output = "[Rectangle] (12) 2/1 - 4/6"
+        self.assertEqual(str(r1), expected_output)
 
-        # Réinitialisez le flux de sortie standard
-        mock_stdout = StringIO()
-
-        r2 = Rectangle(2, 2)
-        expected_output = "##\n##\n"
-        
-        with unittest.mock.patch('sys.stdout', new_callable=StringIO) as mock_stdout:
-            r2.display()
-            self.assertEqual(mock_stdout.getvalue(), expected_output)
+        r2 = Rectangle(5, 5, 1)
+        expected_output = "[Rectangle] (1) 1/0 - 5"
+        self.assertEqual(str(r2), expected_output)
 
 if __name__ == '__main__':
     unittest.main()
