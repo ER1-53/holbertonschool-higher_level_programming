@@ -156,7 +156,7 @@ class Test_Rectangle(unittest.TestCase):
 
     def test_str_method_with_square(self):
         square = Rectangle(4, 4, 0, 0, 1)
-        expected_output = "[Rectangle] (1) 0/0 - 4"
+        expected_output = "[Rectangle] (1) 0/0 - 4/4"
         self.assertEqual(str(square), expected_output)
 
     def test_str_method_with_non_square(self):
