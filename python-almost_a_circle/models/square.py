@@ -24,7 +24,7 @@ class Square(Rectangle):
         id = self.id
         w = self.width
         return f"[{class_name}] ({id}) {self.x}/{self.y} - {w}"
-    
+
     def update(self, *args, **kwargs):
         """update from parents Rectangle"""
         super().update(*args, **kwargs)
