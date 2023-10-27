@@ -296,20 +296,6 @@ class Test_Square(unittest.TestCase):
         self.assertEqual(square.x, 2**31 - 1)
         self.assertEqual(square.y, 2**31 - 1)
 
-    def test_set_x_to_maximum_value(self):
-        """Vérifie que la position x de Square peut être définie à la valeur
-        maximale autorisée."""
-        square = Square(5, 2, 3)
-        square.x = 2**31 - 1
-        self.assertEqual(square.x, 2**31 - 1)
-
-    def test_set_y_to_maximum_value(self):
-        """Vérifie que la position y de Square peut être définie à la valeur
-        maximale autorisée."""
-        square = Square(5, 2, 3)
-        square.y = 2**31 - 1
-        self.assertEqual(square.y, 2**31 - 1)
-
 
 if __name__ == '__main__':
     unittest.main()
