@@ -1,3 +1,4 @@
+-- 17 for display all name & score is not only one
 SELECT score, name
 FROM second_table
 WHERE name IN (
