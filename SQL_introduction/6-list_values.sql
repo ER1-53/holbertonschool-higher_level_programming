@@ -1,3 +1,3 @@
 -- 6-list_values.sql
 
-SELECT * from first_table;
+SELECT * FROM first_table;

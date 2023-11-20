@@ -1,3 +1,3 @@
 -- 8-count_89.sql
 
-SELECT COUNT(*) from first_table where id=89
+SELECT COUNT(*) FROM first_table WHERE id=89
