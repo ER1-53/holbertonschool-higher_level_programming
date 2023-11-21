@@ -1,0 +1,7 @@
+Enter password: 
+Grants for user_0d_1@localhost                                                                                                
+GRANT SELECT, ..., DROP ROLE ON *.* TO `user_0d_1`@`localhost`                                                                                                                             
+GRANT APPLICATION_PASSWORD_ADMIN,...,XA_RECOVER_ADMIN ON *.* TO `user_0d_1`@`localhost`                                        
+Grants for user_0d_2@localhost                                                                                                
+GRANT USAGE ON *.* TO `user_0d_2`@`localhost`                                                                                 
+GRANT SELECT ON `hbtn_0d_2`.* TO `user_0d_2`@`localhost`  
