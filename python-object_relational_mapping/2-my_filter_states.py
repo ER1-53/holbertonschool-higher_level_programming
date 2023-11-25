@@ -24,7 +24,7 @@ try:
 
     # Execute the SELECT query
     cursor.execute("SELECT * FROM states WHERE\
-                   ame LIKE %s ORDER BY id ASC", (STATE_NAME_SEARCHED,))
+                   name LIKE %s ORDER BY id ASC", (STATE_NAME_SEARCHED,))
 
     # Fetch all the rows
     rows = cursor.fetchall()
