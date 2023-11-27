@@ -17,7 +17,7 @@ if __name__ == "__main__":
     session = Session()
 
     print("Before")
-    result = session.query(State, City).join(City, State.id == City.state_id)
+    result = session.query(State, City).join(State).order_by(City.id).all()
     print("after")
 
     for state, city in result:
