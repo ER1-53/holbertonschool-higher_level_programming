@@ -16,15 +16,13 @@ STATE_NAME_SEARCHED = sys.argv[4]
 
 try:
     # Connect to MySQL server
-    db = MySQLdb.connect(host=MY_HOST, port=3306, user=MY_USER,
-                         passwd='', db=MY_DB)
+    dbase = MySQLdb.connect(host=MY_HOST, port=3306, user=MY_USER, passwd='', db=MY_DB)
 
     # create an instance of exec querys
-    cursor = db.cursor()
+    cursor = dbase.cursor()
 
     # Execute the SELECT query and protect to sql injection
-    cursor.execute("SELECT * FROM states WHERE\
-                   name LIKE %s ORDER BY id ASC", (STATE_NAME_SEARCHED,))
+    cursor.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC", (STATE_NAME_SEARCHED,))
 
     # Fetch all the rows
     rows = cursor.fetchall()
@@ -38,6 +36,6 @@ except MySQLdb.Error as e:
 
 finally:
     # Close the database connection
-    if db:
+    if dbase:
         cursor.close()
-        db.close()
+        dbase.close()
