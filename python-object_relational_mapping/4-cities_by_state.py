@@ -14,13 +14,19 @@ MY_HOST = 'localhost'
 
 try:
     # Connect to MySQL server
-    db = MySQLdb.connect(host=MY_HOST, port=3306, user=MY_USER, passwd='', db=MY_DB)
+    db = MySQLdb.connect(host=MY_HOST,
+                         port=3306,
+                         user=MY_USER,
+                         passwd='',
+                         db=MY_DB)
 
     # create an instance of exec querys
     cursor = db.cursor()
 
     # Execute the SELECT query and protect to sql injection
-    cursor.execute("SELECT cities.id, cities.name, states.name FROM cities JOIN states ON cities.state_id = states.id ORDER BY cities.id ASC")
+    cursor.execute("SELECT cities.id, cities.name, states.name\
+                   FROM cities JOIN states ON cities.state_id = states.id\
+                   ORDER BY cities.id ASC")
 
     # Fetch all the rows
     rows = cursor.fetchall()
