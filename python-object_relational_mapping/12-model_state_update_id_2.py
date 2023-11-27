@@ -12,12 +12,12 @@ if __name__ == "__main__":
         )
     Base.metadata.create_all(engine)
 
-Session = sessionmaker(bind=engine)
-session = Session()
+    Session = sessionmaker(bind=engine)
+    session = Session()
 
-update_state = session.query(State).filter_by(id=2).first()
+    update_state = session.query(State).filter_by(id=2).first()
 
-update_state.name = 'New Mexico'
-session.commit()
+    update_state.name = 'New Mexico'
+    session.commit()
 
-session.close()
+    session.close()
