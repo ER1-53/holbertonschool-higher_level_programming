@@ -21,7 +21,7 @@ try:
     cursor = db.cursor()
 
     # Execute the SELECT query
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY states.id ASC")
 
     # Fetch all the rows
     rows = cursor.fetchall()
