@@ -22,7 +22,7 @@ try:
 
     # Execute the SELECT query
     cursor.execute(
-        "SELECT * FROM states"
+        "SELECT * FROM states "
         "WHERE name LIKE BINARY 'N%' ORDER BY states.id ASC"
         )
 
